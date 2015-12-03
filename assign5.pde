@@ -1,5 +1,5 @@
-PImage bg1,bg2,start1,start2,end1,end2,enemy,fighter,hp,treasure,shoot;
-PFont  font; 
+PPImage bg1,bg2,start1,start2,end1,end2,enemy,fighter,hp,treasure,shoot;
+
 
 boolean upPressed=false,downPressed=false,leftPressed=false,rightPressed=false;  //key movement
 boolean shooting=false;
@@ -92,8 +92,8 @@ void setup () {
   
   
 //---------------------------  
-  font = loadFont("MicrosoftYaHei-24.vlw");
-  textFont(font,24) ;
+
+
 
   
 //-------------------------------------  
@@ -324,6 +324,7 @@ void draw()
 //-------------------------------------------
 //scoreboard
     fill(255);
+    textSize(24);
     text("Score: "+value, 10, 460);
     
 //-------------------------------------        
